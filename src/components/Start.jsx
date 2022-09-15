@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { startQuiz } from "../store/action";
-import { Input } from "antd";
+import { Input, Form } from "antd";
 
 
 
@@ -20,7 +20,9 @@ const Start = () => {
   const [second, setSecond] = useState(0);
   const [time, setTime] = useState(120);
   const handleQuizStart = () => {
+    onFinish()
     dispatch(startQuiz(time));
+
   };
   useEffect(() => {
     if (minute > 59) {
@@ -42,8 +44,8 @@ const Start = () => {
       <div>
         <div>
           <h1>How Good You Know Memes</h1>
+          <input type="text" required/>
           <p>Good luck!</p>
-          <Input />
           <p>Time:&nbsp;&nbsp;{time}sec</p>
           <button className="startButton" onClick={handleQuizStart}>
             START
