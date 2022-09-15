@@ -1,13 +1,13 @@
-import {QUIZ_START , QUIZ_RESET , QUIZ_NEXT,QUIZ_SUBMIT, QUIZ_PREV , QUIZ_TIMEOUT} from '../constant/quizConstant'
+import {QUIZ_START , QUIZ_RESET , QUIZ_NEXT,QUIZ_SUBMIT, QUIZ_TIMEOUT} from '../store/action'
 
 const initialState = {
     step : 1,
     activeQuestion: 0,
     answers: [],
-    time: 60
+    time: 120
 }
 
-const quizReducer = (state = initialState , action) =>{
+const reducer = (state = initialState , action) =>{
     const {type , payload} = action
     switch (type) {
         case QUIZ_START:
@@ -24,11 +24,7 @@ const quizReducer = (state = initialState , action) =>{
             }
         case QUIZ_RESET:
             return{
-                ...state,step:1,activeQuestion:0,answers:[], time: 60
-            }
-        case QUIZ_PREV:
-            return{
-                ...state,activeQuestion:state?.activeQuestion-1
+                ...state,step:1,activeQuestion:0,answers:[], time: 120
             }
         case QUIZ_TIMEOUT:
             return{
@@ -39,4 +35,4 @@ const quizReducer = (state = initialState , action) =>{
     }
 }
 
-export default quizReducer;
+export default reducer;

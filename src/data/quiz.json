@@ -1,29 +1,54 @@
 {
   "data": [
     {
-      "question": "Which of the following is the major element in earth crust?",
-      "choices": ["Silicon", "Oxygen", "Iron", "Aluminium"],
-      "answer": "Oxygen"
+      "question": "Why Are You ...",
+      "choices": ["Gay", "Transgenda", "Hookar", "Lesbian"],
+      "answer": "Gay" 
     },
     {
-      "question": "Which among the following country is known as “Land of White Elephant”?",
-      "choices": ["India", "Sri Lanka", "UAE", "Thailand"],
-      "answer": "Thailand"
+      "question": "1000-...”?",
+      "choices": ["10", "6", "Why Are You Asking", "7"],
+      "answer": "7"
     },
     {
-      "question": "What is the capital of Austria ?",
-      "choices": ["Graz", "Salzburg", "Innsbruck", "Vienna"],
-      "answer": "Vienna"
+      "question": "Do you know...",
+      "choices": ["The Reason", "The Way", "Why", "This Man"],
+      "answer": "The Way"
     },
     {
-      "question": "The term Ground Stroke is associated with which of the following games?",
-      "choices": ["Cricket", "Badminton", "Tennis", "Draughts"],
-      "answer": "Tennis"
+      "question": "Press ... To Pay Respect",
+      "choices": ["F", "Heart", "Like", "A"],
+      "answer": "F"
     },
     {
-      "question": "What is the name of the biggest planet in our solar system ?",
-      "choices": ["Mars", "Jupiter", "Earth", "Mercury"],
-      "answer": "Jupiter"
+      "question": "At That Moment He Knew, He ... Up",
+      "choices": ["Thrown", "Left", "Fucked", "Pooped"],
+      "answer": "Fucked"
+    },
+    {
+      "question": "NOW I'M ...",
+      "choices": ["MOTIVATED", "FIRED UP", "TUNED", "HIGH"],
+      "answer": "MOTIVATED"
+    },
+    {
+      "question": "Why Won't You Die",
+      "choices": ["You're Too Slow", "Nanomachines Son", "Cus You're Weak", "Cus I'm Stronger"],
+      "answer": "Nanomachines Son"
+    },
+    {
+      "question": "MID OR",
+      "choices": ["FEED", "GRIND", "RIP", "FEAR"],
+      "answer": "FEED"
+    },
+    {
+      "question": "This IS",
+      "choices": ["SPARTA", "SPARTA", "SPARTA", "SPARTA"],
+      "answer": "SPARTA"
+    },
+    {
+      "question": "Shut Up And ",
+      "choices": ["Sit Down", "Cry", "Take My Money", "Help Me"],
+      "answer": "Take My Money"
     }
   ]
 }

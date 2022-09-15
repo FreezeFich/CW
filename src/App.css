@@ -2,8 +2,7 @@
   font-family: "Verdana", cursive, sans-serif;
 }
 body {
-  background-color: #7cc6fe;
-  /* background-image: url(./assets/images/bg.jpg); */
+  background-color: #252d4a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +10,8 @@ body {
 }
 
 .App {
-  background-color: #252d4a;
-  /* background-color: #0083c0; */
+  background-color: #006199;
+  flex-direction: column;
   height: 50vh;
    max-height: 600px;
   width: 60vw;
@@ -21,11 +20,7 @@ body {
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
 }
-/* /////////////////////////////////////////////// */
-/* /////////////////////  start ////////////////// */
-/* //////////////////////////////////////////////// */
 .button{
-  background: rgb(131, 5, 189);
   outline: none;
   border: none;
   padding: 10px;
@@ -33,10 +28,10 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .startBox{
-  color: white;
+  color: rgb(82, 255, 255);
   height: 100%;
   display: flex;
   align-items: center;
@@ -44,7 +39,7 @@ body {
   text-align: center;
 }
 .startButton{
-  background: rgb(131, 5, 189);
+  background: rgb(0, 117, 153);
   outline: none;
   border: none;
   padding: 10px;
@@ -54,30 +49,16 @@ body {
   cursor: pointer;
   color: white;
 }
-.timeInput{
-  outline: none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  text-align: center;
-}
-.timeInput::-webkit-inner-spin-button, 
-.timeInput::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-/* /////////////////////////////////////////////// */
-/* /////////////////////  question ////////////////// */
-/* //////////////////////////////////////////////// */
 .questionBox{
  position: relative;
  height: 100%;
  color: white;
+ display: flex;
+ flex-direction: column;
 }
 .questionBox .questionHead{
   display: flex;
+  
   justify-content: space-between;
 }
 .middleBox{
@@ -111,7 +92,7 @@ body {
   margin-bottom: 8px;
 }
 .option .text:hover{
-  background: #234668;
+  background: #3c76b1;
 }
 .option .text input{
   position: fixed;
@@ -119,7 +100,7 @@ opacity: 0;
 pointer-events: none;
 }
 .selected{
-  background: rgb(131, 5, 189);
+  background: rgb(33, 197, 175);
   width: 80%;
   font-size: 16px;
   border-radius: 15px;
@@ -141,9 +122,6 @@ pointer-events: none;
 .nextBtn{
   float: right;
 }
-/* /////////////////////////////////////////////// */
-/* /////////////////////  end ////////////////// */
-/* //////////////////////////////////////////////// */
 .endBox{
   align-items: center;
   text-align: center;
@@ -153,9 +131,6 @@ pointer-events: none;
   height: 50px;
 }
 
-/* /////////////////////////////////////////////// */
-/* /////////////////////  modal ////////////////// */
-/* //////////////////////////////////////////////// */
 .modal {
   position: absolute;
   top: 0;
@@ -169,7 +144,7 @@ pointer-events: none;
   position: absolute;
   border-radius: 10px;
   padding: 10px;
-  background: white;
+  background: rgb(115, 165, 199);
   color: black;
   width: 50%;
   height: 80%;

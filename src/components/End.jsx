@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { resetQuiz } from "../redux/action/quizAction";
-import { formatTime } from "../utils";
+import { resetQuiz } from "../store/action";
+import { formatTime } from "../Time";
 import quizData from "../data/quiz.json";
 import Modal from "./Modal";
-import Trophy from "../assets/images/trophy.png";
+import Trophy from "../images/trophy.png";
 
 const End = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,6 @@ const End = () => {
   };
   return (
     <div className="endBox">
-      <img src={Trophy} className="trophy" alt="" srcset="" />
       <h3>Your results</h3>
       <p>
         {correctAnswers} of {quizData?.data.length}
@@ -34,6 +33,8 @@ const End = () => {
         <strong>
           {Math.floor((correctAnswers / quizData?.data.length) * 100)}%
         </strong>
+      </p>
+      <p>
       </p>
       <p>
         <strong>Your time:</strong> {time}sec

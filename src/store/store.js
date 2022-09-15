@@ -5,7 +5,7 @@ import logger from "redux-logger";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
 
-import quizReducer from "./quizReducer";
+import quizReducer from "./reducer";
 
 const reducers = persistReducer(
   { storage: storage, key: "a27" },

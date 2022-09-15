@@ -4,12 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-// redux provider
 import { Provider } from "react-redux";
-import { store } from "./redux/reducer/store";
-// redux persist
+import { store } from "./store/store";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
+
+import "antd/dist/antd.css";
 
 let persistor = persistStore(store);
 

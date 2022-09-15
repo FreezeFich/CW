@@ -1,11 +1,9 @@
-import {
-  QUIZ_START,
-  QUIZ_NEXT,
-  QUIZ_SUBMIT,
-  QUIZ_RESET,
-  QUIZ_PREV,
-  QUIZ_TIMEOUT,
-} from "../constant/quizConstant";
+export const QUIZ_START = "QUIZ_START"
+export const QUIZ_RESET = "QUIZ_RESET"
+export const QUIZ_NEXT = "QUIZ_NEXT"
+export const QUIZ_SUBMIT = 'QUIZ_SUBMIT'
+export const QUIZ_TIMEOUT = 'QUIZ_TIMEOUT'
+export const GET_USER = 'GET_USER'
 
 export const startQuiz = (time) => (dispatch) => {
   dispatch({
@@ -13,6 +11,11 @@ export const startQuiz = (time) => (dispatch) => {
     payload: time,
   });
 };
+
+export const getUser = (value) => ({
+  type: GET_USER,
+  payload: value,
+}) 
 
 export const nextQuiz =
   ({ answers }) =>
@@ -23,12 +26,7 @@ export const nextQuiz =
     });
   };
 
-export const prevQuiz = () => (dispatch) => {
-  dispatch({
-    type: QUIZ_PREV,
-    payload: null,
-  });
-};
+
 
 export const submitQuiz =
   ({ answers, time }) =>

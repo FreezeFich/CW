@@ -2,10 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   nextQuiz,
-  prevQuiz,
   submitQuiz,
-  timeOut,
-} from "../redux/action/quizAction";
+  timeOut
+} from "../store/action";
 import quizData from "../data/quiz.json";
 
 const Question = () => {
@@ -37,10 +36,6 @@ const Question = () => {
     if (error) {
       setError("");
     }
-  };
-  const handlePrev = () => {
-    setError("");
-    dispatch(prevQuiz());
   };
   const handleNext = (e) => {
     if (selected === "") {
@@ -112,12 +107,6 @@ const Question = () => {
         </div>
       </section>
       <section className="questionBottom">
-        {activeQuestion <= 0 ? null : (
-          <button className="button" onClick={handlePrev}>
-            Prev
-          </button>
-        )}
-
         {activeQuestion + 1 >= quizData?.data.length ? (
           <button className="button nextBtn" onClick={handleSubmit}>
             Submit
